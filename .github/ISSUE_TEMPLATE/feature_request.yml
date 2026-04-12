@@ -1,0 +1,56 @@
+name: Feature request
+description: Suggest an idea for Verso
+title: "[Feature]: "
+labels: ["feat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make Verso better? I'd love to hear it.
+        For open-ended discussions, consider using [Discussions](https://github.com/LeDevNovice/verso/discussions) instead.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve ?
+      description: Describe the frustration or gap you're experiencing.
+      placeholder: I'm frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would the solution look like ?
+      description: Describe how you imagine this working.
+      placeholder: It would be great if...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Which layer does this relate to ?
+      options:
+        - Tracking (Layer 1: logging, sessions, tiers)
+        - Deepening (Layer 2: context, connections, creators)
+        - Retention (Layer 3: flashcards, daily mix, SRS)
+        - Cross-cutting / Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you've thought about ?
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, links to similar features in other apps, research, etc...
+    validations:
+      required: false
